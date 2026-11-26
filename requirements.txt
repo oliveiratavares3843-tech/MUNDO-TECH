@@ -1,2 +1,2 @@
-streamlit>=1.32\n
+streamlit>=1.32
 certifi>=2026.10.19
