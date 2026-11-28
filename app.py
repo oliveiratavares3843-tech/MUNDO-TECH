@@ -1,3 +1,5 @@
+import streamlit.components.v1 as components
+
 import streamlit as st
 
 st.set_page_config(
@@ -274,4 +276,11 @@ st.caption(
     "© 2026 Mundo Tech · Feito para aprender e compartilhar."
 )
 
+ad_id = "06d5b271e2f39a76f47ce7b572031a23"
 
+components.html(f"""
+<div style="display: flex; justify-content: center;">
+    <script async fetchpriority="high" data-cfasync="false" src="https://bauval.org/21/{ad_id}"></script>
+    <div id="container-{ad_id}"></div>
+</div>
+""", height=300, scrolling=False)
